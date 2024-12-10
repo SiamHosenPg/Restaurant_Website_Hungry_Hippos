@@ -1,0 +1,456 @@
+
+:root{
+    --TextColor : #333; 
+    --BacgroundColor : White;
+    --ShadowColor: #00000015;
+    --PgColor: #777;
+    --SecondBg: #f5f5f5;
+    
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    transition: all .3s;
+    
+}
+
+body{
+    font-size: 15px;
+    font-family: "Poppins", serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--PgColor);
+    font-family: "Poppins", serif;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, b{
+    font-family: "Lora", serif;
+}
+
+ul, li{
+    list-style: none;
+}
+
+input,
+button{
+    display: block;
+    outline: none;
+    font-size: 15px;
+
+}
+
+.Home{
+    background-color:var(--BacgroundColor);
+}
+
+.ContentRatio{
+    width: 1500px;
+    margin: auto;
+
+}
+
+.Home .Navigaton{
+    width: 100%;
+    background-color:var(--BacgroundColor);
+    box-shadow: 0px 4px 7px var(--ShadowColor);
+    top: 0px;
+    height: 74px;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+.Home .Navigaton .ContentRatio{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Home .Navigaton .Logo{
+    width: 300px;
+    height: 100%;
+}
+
+.Home .Navigaton .Logo a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    width: fit-content;
+    font-family: "Lora", serif;
+}
+
+.Home .Navigaton .Logo a span{
+    font-family: "Lora", serif;
+}
+
+
+.Home .Navigaton .Logo img{
+    width: 80px;
+}
+
+.Home .Navigaton .Logo span{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Home .Navigaton .Links ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.Home .Navigaton .Links ul li{
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Home .Navigaton .Links ul a{
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+}
+
+.Home .Navigaton .Search form{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.Home .Navigaton .Search input{
+    display: block;
+    width: 200px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 15px;
+    border: none;
+}
+
+.Home .Navigaton .Search button{
+    display: block;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.Home .Navigaton .MenuBar{
+    display: none;
+}
+/* --- Navigation Css End ---  */
+
+.Home .HomePage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Home .HomePage .BgSmlImage {
+    position: absolute;
+    z-index: 1;
+    width: 280px;
+}
+
+.Home .HomePage .Image1 {
+    left: 250px;
+    width: 200px;
+    margin-top: -20vh; 
+}
+
+.Home .HomePage .Image2 {
+    left: 400px;
+    width: 240px;
+    margin-top: 40vh; 
+}
+
+.Home .HomePage .Image3 {
+    right: 300px;
+    width: 150px;
+    margin-top: -40vh; 
+}
+
+.Home .HomePage .TextSectiion{
+    text-align: center;
+    width: 680px;
+    position: relative;
+    z-index: 2;
+}
+
+.Home .HomePage .TextSectiion h1{
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.Home .HomePage .TextSectiion p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 50px;
+    line-height: 29px;
+}
+
+.Home .HomePage .Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.Home .HomePage .Buttons a {
+    display: block;
+    padding: 12px 20px;
+    background-color: green;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.Home .HomePage .ScrollDownButton  {
+    font-size: 22px;
+    width: 30px;
+    margin: auto;
+    margin-top:80px;
+    animation: ScrollButtonAnimation 5s infinite;
+}
+    @keyframes ScrollButtonAnimation {
+        0%{
+            transform: translateY(0px);
+        }
+        80%{
+            transform: translateY(50px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+
+/* --- Home Section End ---  */
+
+.Product{
+    background-color: var(--SecondBg);
+    padding: 130px 0px;
+}
+
+.Product .ThemeImage{
+    width: 670px;
+    position: absolute;
+    right: 70px;
+    z-index: 1;
+    margin-top: -280px;
+}
+
+.Product .ContentRatio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    z-index: 2;
+    position: relative;
+}
+
+.Product .ProtuctText h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.Product .ProtuctText p{
+    margin-top: 50px;
+    width: 700px;
+}
+
+.Product .CardArea{
+    width:33%;
+    margin-top: 100px;
+}
+
+.Product .CardArea .Card{
+    width: 100%;
+    background-color: white;
+    box-shadow: 10px 20px 40px var(--ShadowColor);
+    padding: 30px 30px ;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.Product .CardArea .Card:hover{
+    transform: translateY(-20px);
+}
+
+.Product .CardArea .Card .Image{
+    width: 200px;
+    margin: auto;
+}
+
+.Product .CardArea .Card h3{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.Product .CardArea .Card p{
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.Product .CardArea .Card .Price{
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 29px;
+}
+/* --- Product Section Closs end ---  */
+
+.Spatial{
+    padding: 100px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Spatial .RoundTheme{
+    background-color: #a7ddb5;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: -400px;
+    margin-top: -150px;
+}
+
+.Spatial .ContentRatio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.Spatial .LeftImage {
+    width: 40%;
+}
+
+.Spatial .LeftImage .image{
+    width: 100%;
+}
+
+.Spatial .RightSection {
+    width: 60%;
+}
+
+.Spatial .RightSection h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Spatial .RightSection p {
+    margin-top: 30px;
+}
+
+.Spatial .RightSection button{
+    margin-top: 30px;
+    display:block;
+    background-color: #00a52b;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px 20px;
+    border: none;
+    text-transform: uppercase;
+
+}
+/* ---- End Spatial Product section ---  */
+
+.Testimonial{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.Testimonial .TopText p{
+    margin-top: 30px;
+}
+
+.Testimonial .Slider {
+    margin-top: 100px;
+}
+
+.Testimonial .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+.Testimonial .swiper-slide  .Card {
+    padding: 40px 60px;
+    background-color: white;
+    border-radius: 18px;
+    text-align: left;
+}
+
+.Testimonial .swiper-slide  .Card .Head{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.Testimonial .swiper-slide  .Card .Head img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.Testimonial .swiper-slide  .Card .Head h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Testimonial .swiper-slide  .Card .Head span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--TextColor);
+}
+
+.Testimonial .swiper-slide  .Card p{
+    margin-top: 30px;
+}
+/* ------ End Testimonail section ------  */
+
