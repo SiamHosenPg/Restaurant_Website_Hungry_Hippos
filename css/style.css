@@ -5,7 +5,7 @@
     --ShadowColor: #00000015;
     --PgColor: #777;
     --SecondBg: #f5f5f5;
-    
+    --LineColor: #e2e2e2;
     
 }
 
@@ -454,3 +454,138 @@ button{
 }
 /* ------ End Testimonail section ------  */
 
+.GetTuch{
+    padding: 100px 0px;
+    border-bottom: 1px solid var(--LineColor);
+}
+
+.GetTuch .ContentRatio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.GetTuch .ContentRatio h3{
+    font-size: 28px;
+    width: 74%;
+    line-height: 3rem;
+
+}
+
+.GetTuch .ContentRatio button{
+    margin-top: 60px;
+    width: 140px;
+    padding: 12px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+/* ---- End Get Tuch ---  */
+
+
+footer{
+    background-color: rgb(255, 255, 255);
+    padding: 100px 0px;
+}
+
+footer .ContentRatio{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .ContentRatio .Main{
+    width: 35%;
+}
+
+footer .ContentRatio .Pages{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: top;
+}
+
+footer .Main .Logo{
+    width: 260px;
+}
+
+footer .Main .Logo a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+footer .Main .Logo a img{
+    width: 90px;
+}
+
+footer .Main .Logo a h4{
+    font-size: 24px;
+}
+
+footer .ContentRatio .Main p{
+    margin-top: 30px;
+    width: 80%;
+}
+
+footer .Pages .Headline{
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+footer .Pages li {
+    color: #6e6e6e;
+    margin-top: 10px;
+    
+}
+
+footer .Pages li a{
+    transition: all .3s; 
+}
+
+footer .Pages li a:hover{
+    color: #4f2353;
+}
+
+footer .Pages .NameBox{
+    width: 340px;
+    background-color: white;
+    border: 1px solid  var(--LineColor);
+    border-radius: 8px;
+    padding: 12px 20px;
+    display: block;
+    outline: none;
+}
+
+footer .Pages .MassageBox{
+    width: 340px;
+    background-color: white;
+    border: 1px solid  var(--LineColor);
+    border-radius: 8px;
+    padding: 12px 20px;
+    display: block;
+    margin-top: 30px;
+    resize: none;
+    height: 100px;
+    outline: none;
+}
+
+footer .Pages button{
+    background-color: white;
+    border: 1px solid  var(--LineColor);
+    border-radius: 8px;
+    padding: 12px 20px;
+    display: block;
+    margin-top: 30px;
+}
