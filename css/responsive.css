@@ -1,0 +1,115 @@
+
+
+
+/* 2K Size ===== */
+@media screen and (max-width:1690px) {
+    body{
+        font-size: 14px;
+    } 
+    .ContentRatio{
+        padding: 0px 10%;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .Home .Navigaton{
+        width: 100%;
+        top: 0px;
+        height: 65px; 
+    }
+    .Home .Navigaton .Logo{
+        width: 280px;
+        height: 100%;
+    }
+    .Home .Navigaton .Logo img{
+        width: 70px;
+    }
+    .Home .Navigaton .Links ul li{
+        margin-left: 26px;
+        font-size: 14px;
+    }
+    .Home .Navigaton .Search input{
+        width: 170px;
+        padding: 7px 20px;
+        font-size: 14px;
+    }
+    .Home .Navigaton .Search button{
+        padding: 7px 11px;
+    }
+    .Home .HomePage .Image1 {
+        left: 150px;
+    }
+    .Home .HomePage .Image2 {
+        left: 200px;
+        width: 200px;
+    }
+    .Home .HomePage .Image3 {
+        right: 200px;
+    }
+    .Product .ThemeImage{
+        width: 570px;
+        right: 70px;
+    }
+    .Product .ContentRatio{
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .Product .CardArea{
+        width:31%;
+        margin-top: 70px;
+    }
+    .Product .CardHideAra{
+        display: none;
+    }
+    .Product .CardArea .Card{
+        padding: 20px 20px;
+        border-radius: 22px;
+    } 
+    .Spatial .RoundTheme{
+        background-color: #a7ddb5;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        margin-left: -390px;
+        margin-top: -150px;
+    }
+
+
+}
+/* End 2K Size ==== */
+
+
+
+
+
+/* 4K Ratio =========   */
+@media screen and (min-width:2500px) {
+
+        
+    .ContentRatio{  
+        padding: 0px 0%;
+        width: 1650px;
+    }
+    .Home .HomePage .Image1 {
+        left: 350px;
+    }
+
+    .Product .ThemeImage{
+        right: 270px;
+    }
+        
+    .Spatial .RoundTheme{
+        width: 1600px;
+        height: 1600px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        margin-left: -470px;
+        margin-top: -270px;
+    }
+}
+
+/* End 4K Size ==== */
