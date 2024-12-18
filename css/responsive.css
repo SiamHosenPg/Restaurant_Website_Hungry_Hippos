@@ -1,6 +1,4 @@
 
-
-
 /* 2K Size ===== */
 @media screen and (max-width:1690px) {
     body{
@@ -67,28 +65,253 @@
         border-radius: 22px;
     } 
     .Spatial .RoundTheme{
-        background-color: #a7ddb5;
         width: 1000px;
         height: 1000px;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 1;
         margin-left: -390px;
         margin-top: -150px;
     }
-
-
 }
 /* End 2K Size ==== */
 
+/* ==== Tab Sreeen==== */
+@media screen  and (max-width: 1260px){
+    .ContentRatio{
+        padding: 0px 5%;
+    }
+    .Product, .Spatial, footer, .Testimonial {
+        padding: 100px 0px;
+    }
+    .Home .HomePage .Image1 {
+        left: 70px;
+    }
+    .Home .HomePage .Image2 {
+        left: 170px;
+        width: 200px;
+    }
+    .Home .HomePage .Image3 {
+        right: 120px;
+    }
+    .GetTuch .Image{
+        width: 170px;
+        left: 5%;
+        margin-top: 40px;
+    }
+    .GetTuch .Image2{
+        left: 80%;
+        margin-top: 120px;
+    }
+    .Spatial .RoundTheme{
+        width: 1000px;
+        height: 1000px;
+        margin-left: -530px;
+        margin-top: -170px;
+    }
+    footer .CoffeeList{
+        display: none;
+    }
+}
+/* Closs  */
 
+@media screen and (max-width:1010px){
+    .Home .Navigaton .MenuBar{
+        display: block !important;
+        padding: 7px 11px;
+        background-color: white;
+        border: none;
+        color: #333;
+        font-size: 22px;
+    }
+    .Home .Navigaton .Links ul{
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .Home .Navigaton .Links ul li{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .Home .Links{
+        display: block;
+        position: fixed;
+        top: 64px ;
+        right: -320px;
+        width: 300px;
+        border-left: 1px solid var(--LineColor);
+        height: calc(100vh - 65px);
+        background-color: #fff;
+        z-index: 6;
+        opacity: 0;
+        padding-left: 40px;
+    }
+    .Home .MenuBarPosition{
+        right: 0px;
+        opacity: 1;
+        top: 64px;
+    }
+    .Product .ContentRatio{
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .Product .CardHideAra{
+        display: block;
+    }
+    .Product .CardArea{
+        width:47%;
+        margin-top: 30px;
+    }
+    .Spatial .RoundTheme{
+        width: 800px;
+        height: 800px;
+        margin-left: -390px;
+        margin-top: -150px;
+    }
+    .Product .ThemeImage{
+        width: 490px;
+        right: 40px;
+        margin-top: -230px;
+    }
+}
+/* End  */
 
+@media screen and (max-width:830px) {
+    .Home .Search{
+        display: none;
+    }
+    .Home .HomePage .TextSectiion{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .Home .HomePage .TextSectiion p{
+        font-size: 14px;
+        padding: 0px 9%;
+    }
+    .Home .HomePage .Image1 {
+        left: 150px;
+        margin-top: 60vh;
+        width: 400px;
+    }
+    @keyframes HomeImage1 {
+        0%{
+            transform: rotate(30deg);
+            margin-top: 30vh;
+            opacity: 0;
+        }
+        100%{
+            transform: rotate(0deg);
+            margin-top: 60vh;
+            opacity: 1;
+        }
+    }
+    .Home .HomePage .Image2 {
+        left: 50px;
+        width: 200px;
+        margin-top: -80vh;
+    }
+    @keyframes HomeImage2 {
+        0%{
+            transform: rotate(-60deg);
+            margin-top: -40vh; 
+            opacity: 0;
+        }
+        100%{
+            transform: rotate(0deg);
+            margin-top: -80vh; 
+            opacity: 1;
+        }
+    }
+    .Home .HomePage .Image3 {
+        display: none;
+    }
+    @keyframes HomeImage3 {
+        0%{
+            transform: rotate(-60deg);
+            margin-top: -10vh;
+            opacity: 0;
+        }
+        100%{
+            transform: rotate(0deg);
+            margin-top: -40vh; 
+            opacity: 0;
+        }
+    }
+    .Product .ThemeImage{
+        display: none;
+    }
+    .Product .CardArea{
+        width:100%;
+        margin-top: 20px;
+    }
+    .Product .ProtuctText p{
+        margin-top: 50px;
+        width: 100%;
+    }
 
+    .Spatial .ContentRatio{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Spatial .LeftImage {
+        width: 80%;
+    }
+    .Spatial .RightSection {
+        width: 100%;
+    }
+    .Spatial .RoundTheme{
+        width: 500px;
+        height: 500px;
+        margin-left: -190px;
+        margin-top: -150px;
+    }
+    .GetTuch .ContentRatio h3{
+        font-size: 21px;
+        width: 90%;
+        line-height: 2.5rem;
+    }
+    .GetTuch .Image{
+        left: -15%;
+        margin-top: -21vh;
+    }
+    
+    .GetTuch .Image2{
+        left:70%;
+        margin-top: 37vh;
+    }
+
+    footer .SpatuleList{
+        display: none;
+    }
+    footer .ContentRatio{
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+    }
+    
+    footer .ContentRatio .Main{
+        width: 100%;
+    }
+    
+    footer .ContentRatio .Pages{
+        width: 100%;
+        flex-direction: column;
+    }
+    footer .Pages .NameBox{
+        width: 100%;
+    }
+    
+    footer .Pages .MassageBox{
+        width: 100%;
+    }
+
+    .Product, .Spatial, footer, .Testimonial {
+        padding: 70px 20px;
+    }
+}
 
 /* 4K Ratio =========   */
 @media screen and (min-width:2500px) {
-
-        
     .ContentRatio{  
         padding: 0px 0%;
         width: 1650px;
@@ -96,11 +319,9 @@
     .Home .HomePage .Image1 {
         left: 350px;
     }
-
     .Product .ThemeImage{
         right: 270px;
-    }
-        
+    }  
     .Spatial .RoundTheme{
         width: 1600px;
         height: 1600px;

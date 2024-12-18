@@ -81,6 +81,7 @@ button{
 
 .Home{
     background-color:var(--BacgroundColor);
+    overflow: hidden;
 }
 
 .ContentRatio{  
@@ -194,6 +195,8 @@ button{
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .Home .HomePage .BgSmlImage {
@@ -522,6 +525,7 @@ button{
     padding: 130px 0px;
     border-bottom: 1px solid var(--LineColor);
     position: relative;
+    overflow: hidden;
 }
 
 .GetTuch .Image{
@@ -542,6 +546,7 @@ button{
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    position: relative;
 }
 
 .GetTuch .ContentRatio h3{
@@ -690,3 +695,4 @@ footer .Pages button{
     text-transform: uppercase;
     font-weight: 600;
 }
+/* --- End Footer ----  */
