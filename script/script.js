@@ -47,3 +47,8 @@ let ScreenWidth = screen.width;
           });
         }
 // -------End Swiper Script -------
+
+// ----------Search Function---------
+function SearchFunction(){
+  alert("This is not connecting with server ")
+}
